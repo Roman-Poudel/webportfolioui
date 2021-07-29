@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padpadding-top: 60px;ding-top: 60px;
 
 }
 
@@ -14,19 +15,40 @@ code {
 }
 .footer{
   width: 100%;
-  height: 60px;
-  position: absolute;
+  height: 5px;
+  position: -ms-device-fixed;
   left: 0;
   bottom: 0;
 }
 .box{
-  background-color: #282c34;
-  text-decoration: none;
+  background-color:white;
+  margin-top: 5px;
 }
-.fixed-top {
-  top: -1px;
-  bottom: 5px;
-  transform: translateY(0px);
-  transition: transform .3s;
+/*.fixed-top {*/
+/*  top: -1px;*/
+/*  bottom: 5px;*/
+/*  transform: translateY(0px);*/
+/*  transition: transform .3s;*/
+/*}*/
+.responsive-iframe {
+  position: inherit;
+  width: 100%;
+  height: 100%;
 }
+
+.footer-icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: left; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 10px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 40px; /* Increased font size */
+}
+
+.tooltip  a:hover{
+  visibility: visible;
+  border-radius: 50%;
+}
+
 

@@ -7,22 +7,24 @@ import Card from "react-bootstrap/Card";
 class Login extends Component {
     render() {
         return (
-            <div className="container justify-content-center">
-                <Card className="text-center text-muted bg-light" >
-                    <Card.Title>LOGIN</Card.Title>
-                <Form>
-                    <Form.Group>
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control  type="email" placeholder="Enter email" />
-
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                        {/*<Form.Check type="checkbox" label="Check me out" />*/}
-                        <Button className="btn btn-primary" type="submit"> LOGIN </Button>
-                    </Form.Group>
-
-                </Form>
-                </Card>
+            <div className="container col-md-4 col-md-offset-4">
+               <div className="box text-muted">
+                   <form>
+                       <div className="form-group">
+                           <label htmlFor="exampleInputEmail1">Email address</label>
+                           <input type="email" className="form-control" id="exampleInputEmail1"
+                                  aria-describedby="emailHelp" placeholder="Enter email"/>
+                               <small id="emailHelp" className="form-text text-muted">We'll never share your email with
+                                   anyone else.</small>
+                       </div>
+                       <div className="form-group">
+                           <label htmlFor="exampleInputPassword1">Password</label>
+                           <input type="password" className="form-control" id="exampleInputPassword1"
+                                  placeholder="Password"/>
+                       </div>
+                       <button type="submit" className="btn btn-primary">Submit</button>
+                   </form>
+               </div>
             </div>
         );
     }

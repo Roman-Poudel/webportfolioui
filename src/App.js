@@ -1,6 +1,8 @@
 
 import me from './assets/image/me.jpg';
 import './App.css';
+import './assets/css/form.css';
+import './assets/css/innertabs.css';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MainNavbar from "./component/mainNavbar";
@@ -12,7 +14,7 @@ import 'react-bootstrap/dist/react-bootstrap.min';
 
 import {
     BrowserRouter as Router,
-    Route
+    Route,
 } from "react-router-dom";
 import Home from "./component/home";
 import Footermenu from "./component/footermenu";
@@ -28,7 +30,6 @@ function App() {
         <MainNavbar/>
             <Router >
                 <Switch>
-
                     <Route exact  path="/" component={Home}></Route>
                     <Route exact  path="/home" component={Home}></Route>
                     <Route exact  path="/education" component={Education}></Route>

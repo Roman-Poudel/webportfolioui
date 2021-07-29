@@ -1,39 +1,68 @@
 import React, {Component} from 'react';
 import me from '../assets/image/me.jpg';
+import desktop from '../assets/image/desktop.jpg';
+import profile from '../assets/image/profile.png';
+import home from '../assets/css/home.css';
+import background from "../assets/image/desktop.jpg";
 
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state={
             color: "#282c34",
-            /*backgroundImage: `url(${me})`,
+            backgroundImage: `url(${desktop})`,
             height: "50%",
-            backgroundRepeat: "repeat"*/
+            backgroundRepeat: "repeat"
         }
     }
     render() {
         return (
             <div className="container">
-                <div className="box text-light text-muted ">
-                    <h1>hello world</h1>
-                    <h2> hello world </h2>
-                    <h3>hello world</h3>
-                    <h4>hello world</h4>
-                    <h5>hello world</h5>
-                    <h1>hello world</h1>
-                    <h2> hello world </h2>
-                    <h1>hello world</h1>
-                    <h2> hello world </h2>
-                    <h3>hello world</h3>
-                    <h4>hello world</h4>
-                    <h5>hello world</h5>
-                    <h1>hello world</h1>
-                    <h2> hello world </h2>
-
+                <div className=" box text-muted">
+                    <div className="row">
+                        <div className="col col-3 ">
+                            <div className="split left">
+                                <div className="centered">
+                                    <div>
+                                        <img className="img-fluid" src={me} alt="My Image"/>
+                                        <h3>Roman Poudel</h3>
+                                    </div>
+                                    <div className="container col-md-4 col-md-offset-4">
+                                        <div className="icon-bar">
+                                            <a href="#"><i className="fa fa-facebook text-info"></i></a>
+                                            <a href="#"><i className="fa fa-linkedin text-info"></i></a>
+                                            <a href="#"><i className="fa fa-github text-black-50"></i></a>
+                                            <a href="#"><i className="fa fa-twitter text-info"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col col-9 ">
+                            <div className="right ">
+                                {/*<div>
+                                    <h4>You need to know about me.</h4>
+                                    <img src={profile} className="responsive-image"
+                                         style={{border:"none", align:"right",
+                                             overflow:"hidden"}}></img>
+                                    <h1>Hello</h1>
+                                    <p>I'm Roman Poudel</p>
+                                    <p>An information technology Graduate</p>
+                                </div>*/}
+                                <div className="card text-muted">
+                                    <img src={profile} className="card-img" alt="Background Image"/>
+                                    <div className="card-img-overlay">
+                                        <h5 className="card-title">Card title</h5>
+                                        <p className="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                        <p className="card-text"> Some text Goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
-
             </div>
         );
     }
