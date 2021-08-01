@@ -8,6 +8,10 @@
 /*    padding-top: 20px;*/
 /*}*/
 
+img:hover {
+    opacity: 0.5;
+}
+
 .left {
 
     background-color: whitesmoke;
@@ -52,11 +56,12 @@
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: #d3f3e7;
 }
 .responsive-image{
     width: 100%;
     height: auto;
 
 }
+
 

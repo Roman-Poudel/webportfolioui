@@ -17,6 +17,9 @@ class Projects extends Component {
         }
         document.getElementById(pageName).style.display = "block";
     }
+    componentDidMount() {
+        this.openPage('University');
+    }
 
     render() {
         return (
@@ -30,20 +33,143 @@ class Projects extends Component {
                         <button className="tablink" onClick={()=>this.openPage('Other')}>Other</button>
                     </div>
                     <div id="University" className="tabcontent">
-                        <h3>London</h3>
-                        <p>London is the capital city of England.</p>
+                        <div className="card text-center">
+                            <div className="card-header"><b> University Projects</b></div>
+                            <div className="card-body">
+                                <div className="table-responsive">
+                                    <table className="table table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th> Project Name</th>
+                                            <th> Technology Used</th>
+                                            <th> Role</th>
+                                            <th> File or Link </th>
+                                            <th> Submitted To</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td> Library Management System</td>
+                                            <td> C Language</td>
+                                            <td> Design, Code, Document and Present</td>
+                                            <td>
+                                                <a href="https://github.com/Roman-Poudel/LMS-C">Library Management System (Using C)</a>
+                                            </td>
+                                            <td>Pokhara University</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Online Conference Management System</td>
+                                            <td>Java, SQL, JPA, SPRING, THYMELEAF, HTML, CSS</td>
+                                            <td>Design, Code,Document and Present </td>
+                                            <td><a href="https://github.com/Roman-Poudel/CQUProject/tree/development">OCMS</a></td>
+                                            <td>Central Queensland University</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div className="card-footer text-muted">
+                                <a onClick={()=>this.openPage('Ongoing')} className="btn btn-primary">Next</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="Ongoing" className="tabcontent">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p>
+                        <div className="card text-center">
+                            <div className="card-header"><b> Working Projects</b></div>
+                            <div className="card-body">
+                                <div className="table-responsive">
+                                    <table className="table table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th> Project Name</th>
+                                            <th> Technology Used</th>
+                                            <th> Role</th>
+                                            <th> File or Link </th>
+                                            <th> Submitted To</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td> Web Portfolio</td>
+                                            <td>React, css BootStrap, HTML</td>
+                                            <td>Design, Develop and Deploy</td>
+                                            <td><a href="https://github.com/Roman-Poudel/webportfolioui/tree/development">
+                                                Roman-Poudel/webportfolioui
+                                            </a></td>
+                                            <td>Github</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div className="card-footer text-muted">
+                                <a onClick={()=>this.openPage('Completed')} className="btn btn-primary">Next</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="Completed" className="tabcontent">
-                        <h3>Tokyo</h3>
-                        <p>Tokyo is the capital of Japan.</p>
+                        <div className="card text-center">
+                            <div className="card-header"><b> Completed Projects</b></div>
+                            <div className="card-body">
+                                <div className="table-responsive">
+                                    <table className="table table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th> Project Name</th>
+                                            <th> Technology Used</th>
+                                            <th> Role</th>
+                                            <th> File or Link </th>
+                                            <th> Submitted To</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div className="card-footer text-muted">
+                                <a onClick={()=>this.openPage('Ongoing')} className="btn btn-primary">Next</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="Other" className="tabcontent">
-                        <h3>Tokyo</h3>
-                        <p>Other city of Japan.</p>
+                        <div className="card text-center">
+                            <div className="card-header"><b> New ideas</b></div>
+                            <div className="card-body">
+                                <div className="table-responsive">
+                                    <table className="table table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th> Project Name</th>
+                                            <th> Technology Proposed</th>
+                                            <th> Role </th>
+                                            <th> File or Link </th>
+                                            <th> Submitted To</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                            <td>---</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div className="card-footer text-muted">
+                                <a onClick={()=>this.openPage('Ongoing')} className="btn btn-primary">Next</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

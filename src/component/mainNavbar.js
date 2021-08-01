@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
+import Logo from "../assets/image/Logo.JPG";
+import NavLink from "react-router-dom/NavLink";
+
+
+
 
 
 
@@ -13,32 +17,27 @@ class MainNavbar extends Component {
     render() {
         return (
             <div className="container">
-                <div className="fixed-top sticky-top">
+                {/*<div className="fixed-top sticky-top">*/}
                     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                        <Navbar.Brand href="/home">My Portfolio</Navbar.Brand>
+                        <Navbar.Brand>
+                            <NavLink to="/home">
+                                <img src={Logo} alt="My Logo" height="50"
+                                     class="img-responsive"/>
+                            </NavLink>
+                        </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link href="/myskills">My Skills</Nav.Link>
-                                <Nav.Link href="/projects">Projects</Nav.Link>
-                                <Nav.Link href="/education">Education</Nav.Link>
-                                <Nav.Link href="/contactme">Contact Me</Nav.Link>
-                                <Nav.Link href="/blogs">Blogs</Nav.Link>
-                                {/*<NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                        <NavDropdown.Divider />
-                                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                                    </NavDropdown>*/}
-                            </Nav>
-                            <Nav>
-                                <Nav.Link href="/login">Login</Nav.Link>
-                                <Nav.Link href="/register">Register</Nav.Link>
+                            <Nav className="nav-item">
+                                <NavLink className="nav-link" to="/myskills">My Skills</NavLink>
+                                <NavLink className="nav-link" to="/projects">Projects</NavLink>
+                                <NavLink className="nav-link" to="/education">Education</NavLink>
+                                <NavLink className="nav-link" to="/experience">Experience</NavLink>
+                                <NavLink className="nav-link" to="/contactme">Contact Me</NavLink>
+                                <NavLink className="nav-link" to="/blogs">Blogs</NavLink>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
-                </div>
+                {/*</div>*/}
             </div>
         );
     }

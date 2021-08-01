@@ -20,6 +20,7 @@ class Home extends Component {
             <div className="container">
                 <div className=" box text-muted">
                     <div className="row">
+                        {/*Left Small Menu bar*/}
                         <div className="col col-3 ">
                             <div className="split left">
                                 <div className="centered">
@@ -38,6 +39,7 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
+                        {/*Right column Description*/}
                         <div className="col col-9 ">
                             <div className="right ">
                                 {/*<div>
@@ -50,13 +52,20 @@ class Home extends Component {
                                     <p>An information technology Graduate</p>
                                 </div>*/}
                                 <div className="card text-muted">
-                                    <img src={profile} className="card-img" alt="Background Image"/>
+                                    <img src={profile} className="card-img"
+                                         style={{opacity:"50%",
+                                             backgroundColor:"whitesmoke"}}
+                                         alt="Background Image"/>
                                     <div className="card-img-overlay">
-                                        <h5 className="card-title">Card title</h5>
-                                        <p className="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                        <p className="card-text"> Some text Goes here</p>
+                                        <h5 className="card-title"><h4>You need to know about me.</h4></h5>
+                                        <p className="card-text text-dark text-muted">
+                                            I am a very passionate individual, driven and motivated.
+                                            I like to work as part of a team and take on any task I may encounter.
+                                            My long term objective is to become the best in whatever I do.
+                                            My short term aim is to gain enough experience in the workplace
+                                            to pursue a career in Information Technology. From there I wish to move
+                                            into a position where I can use my knowledge and experience.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
