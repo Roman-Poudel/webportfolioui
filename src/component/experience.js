@@ -47,6 +47,11 @@ class Experience extends Component {
                                         </thead>
                                         <tbody>
                                         <tr >
+                                            <td>SDET</td>
+                                            <td>2022-Current</td>
+                                            <td>QA, Technical Testing</td>
+                                        </tr>
+                                        <tr >
                                             <td>Support Engineer</td>
                                             <td>2017-2017</td>
                                             <td> Deploy Software, Training, Manual Testing of Software</td>
