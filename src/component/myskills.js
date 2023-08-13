@@ -55,6 +55,7 @@ class Myskills extends Component {
                                                     <li> BOOTSTRAP </li>
                                                     <li> SQL </li>
                                                     <li> React (Library)</li>
+                                                    <li> Selenium </li>
                                                 </ul>
                                             </td>
                                         </tr>
