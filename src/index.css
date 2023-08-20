@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 3px;
+
+}
+/* Overriding Container Class for full page If You dont want full comment the override method*/
+@media (min-width: 768px){
+  .container{
+    max-width:100% !important;
+  }
+}
+
+@media (min-width: 992px){
+  .container{
+    max-width:100% !important;
+  }
+}
+/* Overriding Container Finished*/
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.footer{
+    width: 100%;
+    height: 5px;
+    position: -ms-device-fixed;
+    left: 0;
+    bottom:0;
+
+
+}
+
+/* Making the background white for all page having this class*/
+.box{
+  background-color:white;
+  margin:5px 0px 5px 0px;
+}
+/*.fixed-top {*/
+/*  top: -1px;*/
+/*  bottom: 5px;*/
+/*  transform: translateY(0px);*/
+/*  transition: transform .3s;*/
+/*}*/
+/* For responsive iframes*/
+.responsive-iframe {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+/*Footer Css */
+.footer-icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 10%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 5px 0px 5px 0px; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 30px; /* Increased font size */
+    margin-top: 15px;
+    background-color: transparent;
+
+}
+
+/*Tooltip for the Fa fa awesome ICONS*/
+.tooltip  a:hover{
+  visibility: visible;
+  border-radius: 50%;
+}
+/*Footer Css finished*/
+.a{
+    text-decoration: none !important;
+}
