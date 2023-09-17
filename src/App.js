@@ -11,7 +11,7 @@ import Login from "./component/login";
 import Contactme from "./component/contactme";
 import Register from "./component/register";
 import 'react-bootstrap/dist/react-bootstrap.min';
-import {BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter, BrowserRouter as Router} from "react-router-dom";
 import Home from "./component/home";
 import Footermenu from "./component/footermenu";
 import Education from "./component/education";
@@ -25,7 +25,7 @@ import Experience from "./component/experience";
 
 function App() {
   return (
-      <Router >
+      <BrowserRouter basename="/webportfolioui">
           <div className="App">
               <MainNavbar/>
               <Switch>
@@ -43,7 +43,7 @@ function App() {
               </Switch>
               <Footermenu/>
           </div>
-      </Router>
+      </BrowserRouter>
   );
 }
 

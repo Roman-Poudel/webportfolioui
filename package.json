@@ -2,7 +2,7 @@
   "name": "webportfolioui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://roman-poudel.github.io",
+  "homepage": "https://roman-poudel.github.io/webportfolioui",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
