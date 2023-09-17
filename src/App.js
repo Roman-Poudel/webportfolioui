@@ -11,7 +11,7 @@ import Login from "./component/login";
 import Contactme from "./component/contactme";
 import Register from "./component/register";
 import 'react-bootstrap/dist/react-bootstrap.min';
-import {BrowserRouter, BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import Home from "./component/home";
 import Footermenu from "./component/footermenu";
 import Education from "./component/education";
