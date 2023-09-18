@@ -1,0 +1,50 @@
+/* Style the FooterMenu container */
+.FooterMenu {
+    background-color: #333; /* Change this to your preferred background color */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Adjust the padding as needed */
+}
+
+/* Style the footer section */
+.footer {
+    padding: 20px 0; /* Adjust the padding as needed */
+}
+
+/* Style the text-light background */
+.text-light.bg-dark {
+    background-color: #222; /* Change this to your preferred background color */
+}
+
+/* Style the icons and text in the footer */
+.footer-icon-bar {
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+.footer-icon-bar div {
+    margin-bottom: 10px; /* Add space between items */
+}
+
+.footer-icon-bar i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+/* Style the Quick Menu links */
+.footer-icon-bar.text-center a {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #fff; /* Text color for the links */
+    margin-right: 20px; /* Add space between links */
+}
+
+/* Style the social media links */
+.footer-icon-bar.text-center a.text-reset {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #fff; /* Text color for the links */
+    margin-right: 20px; /* Add space between links */
+}
+
+/* Style the copyright text */
+.footer-copyright {
+    margin-top: 30px; /* Add space above the copyright text */
+    font-size: 14px; /* Adjust the font size as needed */
+}

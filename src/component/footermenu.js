@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import './FooterMenu.css'; // Import your CSS styles for the footer menu here
+import '../assets/css/footermenu.css';
 
 function FooterMenu() {
     return (
